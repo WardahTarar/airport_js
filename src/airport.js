@@ -10,3 +10,6 @@ Airport.prototype.planes = function () {
 Airport.prototype.clearForLanding = function(plane){
   this._runway.push(plane)
 }
+Airport.prototype.clearForTakeOff = function(plane) {
+  this._runway = []
+}
